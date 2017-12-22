@@ -5,23 +5,20 @@ import {
 	MatListModule
 	 } from '@angular/material';
 
-import { AdminComponent } from './admin.component';
-
-/* custome modules */
-import { SidemenuModule } from '../core/sidemenu/sidemenu.module';
+import { SidemenuComponent } from './sidemenu.component';
+// import { SideMenuItemComponent } from './side-menu-item/side-menu-item.component';
 
 @NgModule({
-	declarations: [AdminComponent],
+	declarations: [ SidemenuComponent ],
 	imports: [
 	    CommonModule,
 	    MatSidenavModule,
-	    MatListModule,
-	    SidemenuModule,
+	    MatListModule
 	], 
 	providers: [
 	],
 	exports: [
-		AdminComponent
+		SidemenuComponent
 	]
 })
-export class AdminModule { }
+export class SidemenuModule { }
