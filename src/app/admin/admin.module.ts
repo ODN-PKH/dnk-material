@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { 
 	MatSidenavModule,
-	MatListModule
+	MatListModule,
+	MatToolbarModule
 	 } from '@angular/material';
 
 import { AdminComponent } from './admin.component';
@@ -16,6 +17,7 @@ import { SidemenuModule } from '../core/sidemenu/sidemenu.module';
 	    CommonModule,
 	    MatSidenavModule,
 	    MatListModule,
+	    MatToolbarModule,
 	    SidemenuModule,
 	], 
 	providers: [

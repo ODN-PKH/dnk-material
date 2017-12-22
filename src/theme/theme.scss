@@ -1,0 +1,33 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* colors */
+$primary : $mat-teal;
+$accent  : $mat-blue;
+$warn    : $mat-red;
+
+
+/* dnk color pallet */
+$dnk-theme-primary: mat-palette($primary);
+$dnk-theme-accent: mat-palette($accent, A200, A100, A400);
+$dnk-theme-warn: mat-palette($warn);
+
+/* create dnk theme */
+$dnk-theme: mat-light-theme($dnk-theme-primary, $dnk-theme-accent, $dnk-theme-warn);
+
+/* applay theme */
+@include angular-material-theme($dnk-theme);
+
+
+/* style components */
+
+@import '~app/core/sidemenu/sidemenu.component.scss';
+
+dnk-sidemenu {
+	$dnk-sidemenu-primary: mat-palette($primary, 400);
+	$dnk-sidemenu-accent: mat-palette($accent, 900);
+	$dnk-sidemenu-warn: mat-palette($warn);
+	$dnk-sidemenu-theme: mat-light-theme($dnk-sidemenu-primary, $dnk-sidemenu-accent, $dnk-sidemenu-warn);
+	@include mat-list-theme($dnk-sidemenu-theme);
+
+}
