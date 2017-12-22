@@ -29,5 +29,6 @@ dnk-sidemenu {
 	$dnk-sidemenu-warn: mat-palette($warn);
 	$dnk-sidemenu-theme: mat-light-theme($dnk-sidemenu-primary, $dnk-sidemenu-accent, $dnk-sidemenu-warn);
 	@include mat-list-theme($dnk-sidemenu-theme);
+	@include sidemenu($dnk-theme);
 
 }

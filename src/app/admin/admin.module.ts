@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import { 
 	MatSidenavModule,
 	MatListModule,
-	MatToolbarModule
+	MatToolbarModule,
+	MatButtonModule,
+	MatIconModule
 	 } from '@angular/material';
 
 import { AdminComponent } from './admin.component';
@@ -18,6 +20,8 @@ import { SidemenuModule } from '../core/sidemenu/sidemenu.module';
 	    MatSidenavModule,
 	    MatListModule,
 	    MatToolbarModule,
+	    MatButtonModule,
+	    MatIconModule,
 	    SidemenuModule,
 	], 
 	providers: [

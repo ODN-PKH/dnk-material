@@ -1,3 +1,16 @@
 @mixin sidemenu($theme) {
+
+	.dnk-side-nav-container {
+		width: 200px !important;
+		.title {
+			margin: 0;
+			color: mat-color($primary, 500);
+		}
+		.dnk-side-toolbar {
+			background-color: white;
+			text-align: center;
+		}
+	}
+
     
 }

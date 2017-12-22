@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { 
 	MatSidenavModule,
-	MatListModule
+	MatListModule,
+	MatToolbarModule
 	 } from '@angular/material';
 
 import { SidemenuComponent } from './sidemenu.component';
@@ -12,7 +14,9 @@ import { SidemenuComponent } from './sidemenu.component';
 	declarations: [ SidemenuComponent ],
 	imports: [
 	    CommonModule,
+	    FlexLayoutModule,
 	    MatSidenavModule,
+	    MatToolbarModule,
 	    MatListModule
 	], 
 	providers: [

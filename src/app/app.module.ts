@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* custome modules */
 import { AppRouterModule } from './app.router.module';
@@ -19,7 +18,6 @@ import { AppComponent } from './app.component';
   	imports: [
     	BrowserModule,
     	BrowserAnimationsModule,
-    	FlexLayoutModule,
         AdminModule,
     	AppRouterModule
   	],
