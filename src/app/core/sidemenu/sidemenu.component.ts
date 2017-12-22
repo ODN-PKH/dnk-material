@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Menus } from './menu-list';
 
 @Component({
   selector: 'dnk-sidemenu',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidemenuComponent implements OnInit {
 
-  constructor() { }
+	menus = Menus;
+  	constructor() { }
 
-  ngOnInit() {
-  }
+  	ngOnInit() {
+  	}
 
 }

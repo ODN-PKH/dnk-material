@@ -1,4 +1,4 @@
-<div fxLayout="column" fxFlexFill fxLayoutAlign="start stretch" class="dnk-side-nav-container">
+<div fxLayout="column" class="dnk-side-nav-container">
 	
 	<div fxFlex="25" fxLayout="column" fxLayoutAlign="center center">
 
@@ -14,18 +14,10 @@
 	</div>
 
 
-	<div>
+	<div style="overflow: auto;">
 
 
-<mat-nav-list>
-
-
-   <mat-list-item role="listitem">Item 1</mat-list-item>
-  <mat-list-item role="listitem">Item 2</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
-   
-</mat-nav-list>
-
+		<dnk-sidemenu-item *ngFor="let menu of menus" [menu]="menu" [iconOnly]="iconOnly"></dnk-sidemenu-item>
 
 		
 	</div>

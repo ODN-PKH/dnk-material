@@ -1,7 +1,7 @@
 @mixin sidemenu($theme) {
 
 	.dnk-side-nav-container {
-		width: 200px !important;
+		// width: 200px;
 		.title {
 			margin: 0;
 			color: mat-color($primary, 500);

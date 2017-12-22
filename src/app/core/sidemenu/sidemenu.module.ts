@@ -1,23 +1,30 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router'; 
 import { 
 	MatSidenavModule,
 	MatListModule,
-	MatToolbarModule
+	MatToolbarModule,
+	MatChipsModule,
+	MatIconModule
 	 } from '@angular/material';
 
 import { SidemenuComponent } from './sidemenu.component';
+import { SidemenuItemComponent } from './sidemenu-item/sidemenu-item.component';
 // import { SideMenuItemComponent } from './side-menu-item/side-menu-item.component';
 
 @NgModule({
-	declarations: [ SidemenuComponent ],
+	declarations: [ SidemenuComponent, SidemenuItemComponent ],
 	imports: [
 	    CommonModule,
 	    FlexLayoutModule,
+	    RouterModule,
 	    MatSidenavModule,
 	    MatToolbarModule,
-	    MatListModule
+	    MatListModule,
+	    MatChipsModule,
+	    MatIconModule
 	], 
 	providers: [
 	],
