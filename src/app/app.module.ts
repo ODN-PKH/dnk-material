@@ -5,22 +5,22 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* custome modules */
 import { AppRouterModule } from './app.router.module';
+import { AdminModule } from './admin/admin.module';
 
 /* custome components */
 import { AppComponent } from './app.component';
-import { AdminComponent } from './admin/admin.component';
 
 
 
 @NgModule({
   	declarations: [
     	AppComponent,
-    	AdminComponent
   	],
   	imports: [
     	BrowserModule,
     	BrowserAnimationsModule,
     	FlexLayoutModule,
+        AdminModule,
     	AppRouterModule
   	],
   	providers: [],
