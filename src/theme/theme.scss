@@ -24,6 +24,7 @@ $mat-light-theme-background: (
 $primary : $mat-teal;
 $accent  : $mat-blue;
 $warn    : $mat-red;
+$toolbar-font-color : white;
 
 
 /* dnk color pallet */
@@ -57,4 +58,10 @@ dnk-sidemenu {
 
 dnk-sidemenu-item{
     @include sidemenu-item($dnk-theme, 20px, 12px)
+}
+
+@import '~app/admin/admin.component.scss';
+dnk-admin {
+    $dnk-sidemenu-bg-image: '/assets/images/backgrounds/sidemenu.jpg';
+    @include admin($dnk-theme, $dnk-sidemenu-bg-image, $toolbar-font-color);
 }

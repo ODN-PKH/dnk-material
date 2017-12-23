@@ -7,13 +7,15 @@
 
     <mat-sidenav-content>
 
-    	<mat-toolbar color="primary" class="mat-elevation-z4">
-
-    		<button mat-icon-button (click)="sidenav.toggle();">
-        		<mat-icon>menu</mat-icon>
-    		</button> 
-   
-        </mat-toolbar>
+    	
+        <div class="dnk-main-toolbar">
+            <mat-toolbar class="dnk-main-toolbar-content">
+                <button mat-icon-button (click)="sidenav.toggle();">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
+        </div> 
+        
 
 
         <perfect-scrollbar>
