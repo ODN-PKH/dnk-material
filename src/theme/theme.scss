@@ -1,11 +1,12 @@
 @import '~@angular/material/theming';
+@import './typography.scss';
 
 /*override mat-light-theme */
 $mat-light-theme-background: (
   status-bar: map_get($mat-grey, 300),
   app-bar:    map_get($mat-grey, 100),
   background: white,
-  hover:      rgba(14,169,154, 1), // TODO(kara): check style with Material Design UX
+  hover:      map_get($mat-grey, 100), 
   card:       white,
   dialog:     white,
   disabled-button: $black-12-opacity,
@@ -18,7 +19,7 @@ $mat-light-theme-background: (
   disabled-list-option: map_get($mat-grey, 200),
 );
 
-@include mat-core();
+@include mat-core($custom-typography);
 
 /* colors */
 $primary : $mat-teal;
@@ -66,4 +67,9 @@ dnk-sidemenu-item{
 dnk-admin {
     $dnk-sidemenu-bg-image: '/assets/images/backgrounds/sidemenu.jpg';
     @include admin($dnk-theme, $dnk-sidemenu-bg-image, $toolbar-font-color);
+}
+
+@import '~app/core/notifications/notifications.component.scss';
+dnk-notifications {
+    @include notifications($dnk-theme);
 }

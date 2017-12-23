@@ -10,9 +10,15 @@
     	
         <div class="dnk-main-toolbar">
             <mat-toolbar class="dnk-main-toolbar-content">
+
                 <button mat-icon-button (click)="sidenav.toggle();">
                     <mat-icon>menu</mat-icon>
                 </button>
+
+                <div class="spacer"></div>
+
+                <dnk-notifications [notifications]="adminUser?.notifications"></dnk-notifications>
+
             </mat-toolbar>
         </div> 
         

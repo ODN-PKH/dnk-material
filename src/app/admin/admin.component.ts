@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MediaChange, ObservableMedia } from "@angular/flex-layout";
+import { AdminData } from './admin.data';
 
 @Component({
   selector: 'dnk-admin',
@@ -10,6 +11,7 @@ export class AdminComponent implements OnInit {
 
 	sideNavOpened: boolean = true;
 	sideNavMode: string = 'side';
+    adminUser = AdminData;
   	constructor(private media: ObservableMedia) { }
 
   	ngOnInit() {

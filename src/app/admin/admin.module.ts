@@ -13,12 +13,14 @@ import { AdminComponent } from './admin.component';
 /* custom modules */
 import { SidemenuModule } from '../core/sidemenu/sidemenu.module';
 import { DnkScrollbarModule } from '../scrollbar/dnk-scrollbar.module';
+import { NotificationsModule } from '../core/notifications/notifications.module';
 
 @NgModule({
 	declarations: [AdminComponent],
 	imports: [
 	    CommonModule,
 	    DnkScrollbarModule,
+	    NotificationsModule,
 	    MatSidenavModule,
 	    MatListModule,
 	    MatToolbarModule,
