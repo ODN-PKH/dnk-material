@@ -22,7 +22,7 @@ $mat-light-theme-background: (
 
 /* colors */
 $primary : $mat-teal;
-$accent  : $mat-blue;
+$accent  : $mat-orange;
 $warn    : $mat-red;
 $toolbar-font-color : white;
 
@@ -57,7 +57,9 @@ dnk-sidemenu {
 @import '~app/core/sidemenu/sidemenu-item/sidemenu-item.component.scss';
 
 dnk-sidemenu-item{
-    @include sidemenu-item($dnk-theme, 20px, 12px)
+    $icon-size: 22px;
+    $font-size: 12px;
+    @include sidemenu-item($dnk-theme, $icon-size, $font-size)
 }
 
 @import '~app/admin/admin.component.scss';
