@@ -8,9 +8,12 @@
     mat-nav-list {
         overflow: hidden;
         height: 48px;
-        transition: height .5s cubic-bezier(.35, 0, .25, 1);  
+        transition: height .5s cubic-bezier(.35, 0, .25, 1); 
     }
     .mat-nav-list .mat-list-item {
         font-size: $font-size;
+    }
+    .secondaryMenu {
+        background: mat-color($primary, 900, 0.3);
     }
 }
