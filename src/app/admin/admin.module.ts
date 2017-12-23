@@ -11,6 +11,7 @@ import {
 import { AdminComponent } from './admin.component';
 
 /* custom modules */
+import { AdminRouterModule } from './admin.router.module';
 import { SidemenuModule } from '../core/sidemenu/sidemenu.module';
 import { DnkScrollbarModule } from '../scrollbar/dnk-scrollbar.module';
 import { NotificationsModule } from '../core/notifications/notifications.module';
@@ -27,6 +28,7 @@ import { NotificationsModule } from '../core/notifications/notifications.module'
 	    MatButtonModule,
 	    MatIconModule,
 	    SidemenuModule,
+	    AdminRouterModule
 	], 
 	providers: [
 	],

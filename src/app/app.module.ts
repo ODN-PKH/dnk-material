@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /* custome modules */
 import { AppRouterModule } from './app.router.module';
-import { AdminModule } from './admin/admin.module';
 
 /* custome components */
 import { AppComponent } from './app.component';
@@ -18,7 +17,6 @@ import { AppComponent } from './app.component';
   	imports: [
     	BrowserModule,
     	BrowserAnimationsModule,
-        AdminModule,
     	AppRouterModule
   	],
   	providers: [],
