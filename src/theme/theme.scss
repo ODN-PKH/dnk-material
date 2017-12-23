@@ -46,9 +46,10 @@ dnk-sidemenu {
 	$dnk-sidemenu-primary: mat-palette($primary, 400);
 	$dnk-sidemenu-accent: mat-palette($accent, 900);
 	$dnk-sidemenu-warn: mat-palette($warn);
-	$dnk-sidemenu-theme: mat-light-theme($dnk-sidemenu-primary, $dnk-sidemenu-accent, $dnk-sidemenu-warn);
+	$dnk-sidemenu-theme: mat-dark-theme($dnk-sidemenu-primary, $dnk-sidemenu-accent, $dnk-sidemenu-warn);
 	@include mat-list-theme($dnk-sidemenu-theme);
-	@include sidemenu($dnk-theme);
+    $dnk-sidemenu-bg-image: '/assets/images/backgrounds/sidemenu.jpg';
+	@include sidemenu($dnk-theme, $dnk-sidemenu-bg-image);
 
 }
 

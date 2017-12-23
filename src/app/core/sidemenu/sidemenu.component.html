@@ -1,24 +1,26 @@
-<div fxLayout="column" class="dnk-side-nav-container">
-	
-	<div fxFlex="25" fxLayout="column" fxLayoutAlign="center center">
-
-		<mat-toolbar fxLayout="column" fxLayoutAlign="center center" class="dnk-side-toolbar">
-
-			<div class="mat-display-1 title"> Aadhya </div>
-
-		</mat-toolbar>
+<div class="dnk-sidemenu-container">
+	<div fxLayout="column" class="dnk-side-nav-container">
 		
+		<div fxFlex="25" fxLayout="column" fxLayoutAlign="center center">
 
-		<img src="../../assets/images/avatars/dnk-avatar.jpg" class="avatar-big">
+			<mat-toolbar fxLayout="column" fxLayoutAlign="center center" class="dnk-side-toolbar">
 
-	</div>
+				<div class="mat-display-1 title"> Aadhya </div>
+
+			</mat-toolbar>
+			
+
+			<img src="../../assets/images/avatars/dnk-avatar.jpg" class="avatar-big">
+
+		</div>
 
 
-	<div style="overflow: auto;">
+		<div style="overflow: auto;">
 
 
-		<dnk-sidemenu-item *ngFor="let menu of menus" [menu]="menu" [iconOnly]="iconOnly"></dnk-sidemenu-item>
+			<dnk-sidemenu-item *ngFor="let menu of menus" [menu]="menu" [iconOnly]="iconOnly"></dnk-sidemenu-item>
 
-		
+			
+		</div>
 	</div>
 </div>
