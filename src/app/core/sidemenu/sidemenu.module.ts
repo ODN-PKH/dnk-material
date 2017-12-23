@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { RouterModule } from '@angular/router'; 
+import { RouterModule } from '@angular/router';
+import { DnkScrollbarModule } from '../../scrollbar/dnk-scrollbar.module';
 import { 
 	MatSidenavModule,
 	MatListModule,
@@ -20,6 +21,7 @@ import { SidemenuItemComponent } from './sidemenu-item/sidemenu-item.component';
 	    CommonModule,
 	    FlexLayoutModule,
 	    RouterModule,
+	    DnkScrollbarModule,
 	    MatSidenavModule,
 	    MatToolbarModule,
 	    MatListModule,
