@@ -73,3 +73,8 @@ dnk-admin {
 dnk-notifications {
     @include notifications($dnk-theme);
 }
+
+@import '~app/dashboard/dashboard/dashboard.component.scss';
+dnk-dashboard {
+    @include dashboard($dnk-theme);
+}

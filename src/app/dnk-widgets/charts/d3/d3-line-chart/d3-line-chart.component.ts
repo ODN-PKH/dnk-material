@@ -17,7 +17,7 @@ export class D3LineChartComponent implements OnInit {
   		this.options =  {
             chart: {
                 type: 'lineChart',
-                height: 450,
+                height: 350,
                 margin : {
                     top: 20,
                     right: 20,

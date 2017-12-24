@@ -1,0 +1,15 @@
+@mixin dashboard($theme) {
+	.dnk-dashboard-container {
+		padding: 20px;
+		color: white;
+		.dnk-dash-linechart-title {
+				background-color: mat-color($accent, 600); 
+				text-align: center;
+				height: 60px;
+    			padding: 10px;
+		}
+		.dnk-dash-linechart-cotainer {
+			padding: 10px;
+		}
+	}
+}
