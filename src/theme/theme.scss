@@ -22,9 +22,9 @@ $mat-light-theme-background: (
 @include mat-core($custom-typography);
 
 /* colors */
-$primary : $mat-teal;
-$accent  : $mat-orange;
-$warn    : $mat-red;
+$primary : $mat-red;
+$accent  : $mat-teal;
+$warn    : $mat-orange;
 $toolbar-font-color : white;
 
 
