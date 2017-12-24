@@ -1,0 +1,25 @@
+@mixin weathercard($theme) {
+	.dnk-weather-card {
+		background: url('https://media.timeout.com/images/103042848/image.jpg');
+		// background-size: 100% 100%;
+		.weather-card-content {
+			background-color: mat-color($primary, 700, 0.2);
+			mat-icon {
+				color: white;
+			}
+			.unit {
+				margin: 30px;
+			}
+		}
+		.weather-card-footer {
+			// background-color: mat-color($primary, 900, 0.7);
+			border-top: 1px solid mat-color($primary, 900);
+			padding: 5px;
+		}
+		h3 {
+				margin: 0;
+				color: white;
+			}
+	}
+
+}

@@ -83,3 +83,8 @@ dnk-dashboard {
 dnk-dashboard {
     @include socialcard($dnk-theme);
 }
+
+@import '~app/dnk-widgets/cards/weather-card/weather-card.component.scss';
+dnk-dashboard {
+   @include weathercard($dnk-theme);
+}

@@ -10,15 +10,17 @@ import {
 	MatIconModule,
 	MatButtonModule
 	 } from '@angular/material';
+import { WeatherCardComponent } from './weather-card/weather-card.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
-  declarations: [ SocialCardComponent ],
-  exports: [ SocialCardComponent ]
+  declarations: [ SocialCardComponent, WeatherCardComponent ],
+  exports: [ SocialCardComponent, WeatherCardComponent ]
 })
 export class CardsModule { }
