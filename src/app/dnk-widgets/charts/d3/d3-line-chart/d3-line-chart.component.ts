@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 declare let d3, nv: any;
 
@@ -9,7 +9,9 @@ declare let d3, nv: any;
 })
 
 export class D3LineChartComponent implements OnInit {
-	options: any;
+	
+    @Input() height: 0;
+    options: any;
 	data: any;
   	constructor() { }
 
@@ -17,7 +19,7 @@ export class D3LineChartComponent implements OnInit {
   		this.options =  {
             chart: {
                 type: 'lineChart',
-                height: 350,
+                height: this.height,
                 margin : {
                     top: 20,
                     right: 20,

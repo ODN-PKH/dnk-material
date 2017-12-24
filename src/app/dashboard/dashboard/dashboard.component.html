@@ -1,12 +1,10 @@
-<div fxLayout="column" class="dnk-dashboard-container" fxFlexFill >
-
-	<div fxFlex="30"  fxLayouWrap fxLayout="row" fxLayoutGap="20px" fxLayout.lt-sm="column">
+<div  fxLayout="row" class="dnk-dashboard-container" fxLayoutGap="20px" fxLayout.lt-sm="column">
 
 		<div fxFlex="50" class="mat-elevation-z4"  fxLayout="column" fxLayouWrap fxLayoutAlign="space-between stretch" >
 
 			<div fxFlex="10" fxLayout="column" fxLayoutAlign="center center" class="dnk-dash-linechart-title mat-body-1">Sales</div>
 			<div class="dnk-dash-linechart-container">
-				<dnk-d3-line-chart></dnk-d3-line-chart>
+				<dnk-d3-line-chart [height]="350"></dnk-d3-line-chart>
 			</div>
 			
 		</div>
@@ -17,12 +15,18 @@
 
 			<div class="dnk-dash-donut-container" fxLayout="column" fxLayouWrap>
 
-				<dnk-d3-donut-chart></dnk-d3-donut-chart>
+				<dnk-d3-donut-chart [height]="350"></dnk-d3-donut-chart>
 
 			</div>
 
 		</div>
 		
-	</div>
-
 </div>
+
+<div fxLayout="column" class="dnk-dashboard-container"  >
+		
+			<div class="dnk-dash-linechart-container mat-elevation-z4">
+				<dnk-d3-line-chart [height]="350"></dnk-d3-line-chart>
+			</div>
+
+	</div>

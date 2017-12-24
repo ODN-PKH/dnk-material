@@ -5,7 +5,7 @@
 
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content style="overflow: hidden;">
 
     	
         <div class="dnk-main-toolbar">
@@ -24,9 +24,9 @@
         
 
 
-        <perfect-scrollbar>
+        <perfect-scrollbar style="height: calc(100% - 33px);">
 
-            <router-outlet></router-outlet>
+            <router-outlet ></router-outlet>
             
         </perfect-scrollbar>
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'dnk-d3-donut-chart',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class D3DonutChartComponent implements OnInit {
 
+    @Input() height;
 	options: any;
 	data: any;
   	constructor() { }
@@ -15,7 +16,7 @@ export class D3DonutChartComponent implements OnInit {
   		this.options = {
   			chart: {
                 type: 'pieChart',
-                height: 350,
+                height: this.height,
                 donut: true,
                 x: function(d){return d.key;},
                 y: function(d){return d.y;},

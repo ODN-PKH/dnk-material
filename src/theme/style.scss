@@ -5,6 +5,10 @@
 }
 
 /* scroll bar style */
+.ps-content {
+  height: 100%;
+}
+
 .ps--scrolling-y>.ps__rail-y {
 	background: transparent !important;
 }
