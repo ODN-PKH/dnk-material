@@ -18,7 +18,7 @@ const routes: Routes = [
     FlexLayoutModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ DashboardComponent ],
+  declarations: [ DashboardComponent,  ],
   exports: [ DashboardComponent ]
 })
 export class DashboardModule { }

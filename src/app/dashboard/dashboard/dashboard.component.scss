@@ -11,5 +11,14 @@
 		.dnk-dash-linechart-cotainer {
 			padding: 10px;
 		}
+		.dnk-dash-donut-title {
+				background-color: mat-color($accent, 600); 
+				text-align: center;
+				height: 60px;
+    			padding: 10px;
+		}
+		.dnk-dash-donut-container {
+			padding: 10px;
+		}
 	}
 }
