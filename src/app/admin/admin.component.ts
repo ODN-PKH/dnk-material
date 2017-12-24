@@ -25,7 +25,7 @@ export class AdminComponent implements OnInit {
             this.sideNavMode = 'side';
             this.sideNavOpened = false;
         } else if (this.media.isActive('lt-sm')) {
-            this.sideNavMode = 'side';
+            this.sideNavMode = 'over';
             this.sideNavOpened = false;
         }
 	}
