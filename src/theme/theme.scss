@@ -78,3 +78,8 @@ dnk-notifications {
 dnk-dashboard {
     @include dashboard($dnk-theme);
 }
+
+@import '~app/dnk-widgets/cards/social-card/social-card.component.scss';
+dnk-dashboard {
+    @include socialcard($dnk-theme);
+}

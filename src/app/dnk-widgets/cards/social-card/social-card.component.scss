@@ -1,0 +1,46 @@
+
+@mixin socialcard($theme) {
+	.dnk-social-card {
+		height: 400px;
+		color: black;
+		.social-header {
+			position: relative;
+			// background: url('https://static.pexels.com/photos/11744/pexels-photo-11744.jpeg');
+			background-color: mat-color($primary, 600);
+			img {
+			 	border-radius: 50%;
+			    width: 120px;
+			    height: 120px;
+			    position: absolute;
+			    bottom: -34px;
+			    left: 50%;
+			    margin-left: -60px;
+			    box-shadow: 0 8px 10px 1px rgba(143,158,181,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(143,158,181,.2);
+			    z-index: 1;
+			}
+		}
+		.social-content {
+			.name {
+				margin: 0;
+				color: mat-color($primary, 900);
+			}
+			.title {
+				margin: 0;
+				color: mat-color($primary, 800);
+			}
+			.connect {
+				margin-top: 10px;
+				color: white;
+				background-color: mat-color($warn, 900);
+			}
+		}
+		.social-footer {
+			padding: 10px;
+			background-color: #f9f9f9;
+			color: mat-color($primary, 800);
+			h3, h4 {
+				margin: 0;
+			}
+		}
+	}
+}

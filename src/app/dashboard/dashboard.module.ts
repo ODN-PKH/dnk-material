@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { Routes, RouterModule } from '@angular/router';
 import { ChartsModule } from '../dnk-widgets/charts/charts.module';
+import { CardsModule } from '../dnk-widgets/cards/cards.module';
 
 const routes: Routes = [
 	{
@@ -16,6 +17,7 @@ const routes: Routes = [
     CommonModule,
     ChartsModule,
     FlexLayoutModule,
+    CardsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [ DashboardComponent,  ],
