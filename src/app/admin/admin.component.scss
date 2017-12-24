@@ -1,12 +1,12 @@
 @mixin admin($theme, $dnk-sidemenu-bg-image, $toolbar-font-color) {
 
 	.dnk-main-toolbar {
-		background: url($dnk-sidemenu-bg-image) no-repeat;
+		// background: url($dnk-sidemenu-bg-image) no-repeat;
 		background-size: 100% 100%;
 		.dnk-main-toolbar-content {
-			color: $toolbar-font-color;
+			// color: $toolbar-font-color;
 			width: 100%;
-			background: mat-color($primary, 900, 0.7);
+			// background: mat-color($primary, 900, 0.7);
 		}
 	}
 
